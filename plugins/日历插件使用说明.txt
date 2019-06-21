@@ -1,0 +1,105 @@
+		$('#datePicker').calender({
+			theme:'white',
+			data: {
+				nd: [{
+					name: "全年",
+					value: "0",
+                    id: "31"
+				}, {
+					name: "上半年",
+					value: "1",
+                    id: "29"
+				}, {
+					name: "下半年",
+					value: "2",
+                    id: "30"
+				}],
+				quar: [{
+					name: "第一季度",
+					value: "1",
+                    id: "13"
+				}, {
+					name: "第二季度",
+					value: "2",
+                    id: "14"
+				}, {
+					name: "第三季度",
+					value: "3",
+                    id: "15"
+				}, {
+					name: "第四季度",
+					value: "4",
+                    id: "16"
+				}],
+				month: [{
+					name: '1月',
+					value: 1,
+                    id: "01"
+				}, {
+					name: '2月',
+					value: 2,
+                    id: "02"
+				}, {
+					name: '3月',
+					value: 3,
+                    id: "03"
+				}, {
+					name: '4月',
+					value: 4,
+                    id: "04"
+				}, {
+					name: '5月',
+					value: 5,
+                    id: "05"
+				}, {
+					name: '6月',
+					value: 6,
+                    id: "06"
+				}, {
+					name: '7月',
+					value: 7,
+                    id: "07"
+				}, {
+					name: '8月',
+					value: 8,
+                    id: "08"
+				}, {
+					name: '9月',
+					value: 9,
+                    id: "09"
+				}, {
+					name: '10月',
+					value: 10,
+                    id: "10"
+				}, {
+					name: '11月',
+					value: 11,
+                    id: "11"
+				}, {
+					name: '12月',
+					value: 12,
+                    id: "12"
+				}],
+				year: [{
+					name: year,
+					value: year
+				}, {
+					name: year - 1,
+					value: year - 1
+				}, {
+					name: year - 2,
+					value: year - 2
+				}, {
+					name: year - 3,
+					value: year - 3
+				}]
+			},
+			tjqId: _this.tjq,
+			scrollInit: 0,
+		})
+
+
+<div id="datePicker"> 
+     <input type="text" class="date-picker" v-model="tjqMc"> 
+     <input type="hidden" id="tjqId" v-model="tjq"> 
+</div> 
